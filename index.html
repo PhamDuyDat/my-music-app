@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assest/css/main.css" />
+    <title>my Music</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="play">
+        <div class="note">
+          <h4>NOW PLAYING:</h4>
+          <h2>HOW TO LOVE</h2>
+        </div>
+        <!-- CD -->
+        <div class="img_song"> 
+          <img src="./assest/img/How to love.png" alt="" />
+        </div>
+        <div class="icon_music">
+          <div class="return_song">
+            <ion-icon name="reload-outline"></ion-icon>
+          </div>
+          <div class="reverse_song">
+            <ion-icon name="play-skip-back-circle-outline"></ion-icon>
+          </div>
+          <div class="stop_song">
+            <ion-icon name="play"></ion-icon>
+
+          </div>
+          <div class="next_song">
+            <ion-icon name="play-skip-forward-circle-outline"></ion-icon>
+          </div>
+          <div class="random_song">
+            <ion-icon name="shuffle-outline"></ion-icon>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="realtime"></div>
+          <input
+            type="range"
+            name="progress"
+            id="progress"
+            value="0"
+            step="1"
+            min="0"
+            max="100"
+          />
+          <audio class="audio" src=""></audio>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="play-list">
+        <div class="song">
+          Haha
+        </div>
+      </div>
+    <script src="./assest/js/main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <style>
+      .change{
+        color: blue;
+      }
+    </style>
+  </body>
+</html>
